@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+/*background css*/
+.back1{
+    background-image: url(images/back2.jpg);
+    background-size: cover;
+
+
+}
+
+
+
+.back{
+
+    background-image: url(images/back3.jpg);
+
+}
+
+/*home column css*/
+.col-md-4 p{
+    background-color: rgba(252, 246, 246, 0.696);
+    border-radius: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.col-md-4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.card.mx-4{
+    background-color: rgba(252, 246, 246, 0.696);
+}
+
+.nav-link{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    
+}
+
+/*logo css*/
+.card-img-top {
+    max-width: 10%;
+    min-height: 00px;
+    
+    
+}
+
+.centre-display{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+}
+
+.lead{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.centre-display{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.container.mt-3{
+    background-color: aqua;
+}
+
+.container.mt-4{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*about images css*/
+
+.card-img1{
+    height: 240px;
+}
+
+.card-img2{
+    height: 240px;
+}
+
+.card-img3{
+    height: 240px;
+}
+
+.container.mt-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 35px 100px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:0 100px 35px 100px;
+}
+
+.items li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(252, 246, 246, 0.696);
+    border-radius: 4px;
+    width: 25%;
+    min-width: 285px;
+    height: 300px;
+    padding: 40px 15px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: rgba(54, 11, 11, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.shoeimage {
+    max-width: 100%;
+    max-height: 200px;
+}
