@@ -42,10 +42,7 @@
 
 /*logo css*/
 .card-img-top {
-    max-width: 10%;
-    min-height: 00px;
-    
-    
+    height: 60px;
 }
 
 .centre-display{
@@ -70,6 +67,10 @@
 
 .container.mt-4{
     font-family: 'Times New Roman', Times, serif;
+}
+/* index css */
+.dropdown-menu{
+    background-color: whitesmoke
 }
 
 /*about images css*/
