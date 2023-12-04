@@ -12,24 +12,36 @@ if (!$conn) {
 }
 
 if (isset($_POST['save'])) {
-    $name = $_POST['name'];
-    $reason = $_POST['reason'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
-    $locality = $_POST['locality'];
-    $city = $_POST['city'];
-    $state = $_POST['state'];
-    $zip = $_POST['zip'];
+    $name = htmlspecialchars($_POST['name']);
+    $reason = htmlspecialchars($_POST['reason']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $address = htmlspecialchars($_POST['address']);
+    $locality = htmlspecialchars($_POST['locality']);
+    $city = htmlspecialchars($_POST['city']);
+    $state = htmlspecialchars($_POST['state']);
+    $zip = htmlspecialchars($_POST['zip']);
 
-    //For inserting the values to mysql database 
-    $sql_query = "INSERT INTO register ( name , reason , email , phone, address , locality , city , state , zip) VALUES ('$name','$reason','$email','$phone','$address','$locality','$city','$state','$zip')";
-    if (mysqli_query($conn, $sql_query)) {
-        echo "";
+    // Use prepared statements to prevent SQL injection
+    $sql_query = "INSERT INTO register (name, reason, email, phone, address, locality, city, state, zip) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    
+    $stmt = mysqli_prepare($conn, $sql_query);
+    
+    if ($stmt) {
+        mysqli_stmt_bind_param($stmt, "sssssssss", $name, $reason, $email, $phone, $address, $locality, $city, $state, $zip);
+
+        if (mysqli_stmt_execute($stmt)) {
+            echo "Record inserted successfully";
+        } else {
+            echo "Error executing statement: " . mysqli_stmt_error($stmt);
+        }
+
+        mysqli_stmt_close($stmt);
+    } else {
+        echo "Error preparing statement: " . mysqli_error($conn);
     }
-    else {
-        echo "Error: " . $sql . "" . mysqli_error($conn);
-    }
-    mysqli_close($conn);
 }
+
+// Close the database connection
+mysqli_close($conn);
 ?>
