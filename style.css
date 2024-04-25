@@ -1,11 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
+* {
+    font-family: 'Poppins', sans-serif,
+}
+
+
+
+#cart{
+    color: rgba(252, 246, 246, 0.696);
+    font-size: 1.2rem;
+    margin-top: 80%;
+    margin-left: 10%;
+  
+}
+
+
+
+/*footer*/
+footer{
+    background-color:#3b5249 ;
+    color: white;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* #foot{
+    position: fixed;
+} */
 
 /*background css*/
 .back1{
     background-image: url(images/back2.jpg);
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
 
 }
@@ -15,7 +46,7 @@
 .back{
 
     background-image: url(images/back3.jpg);
-
+    background-attachment: fixed;
 }
 
 /*home column css*/
@@ -39,6 +70,10 @@
     font-size: 1.5rem;
     
 }
+/*logo side*/
+.head{
+    font-size: 2em;
+}
 
 /*logo css*/
 .card-img-top {
@@ -61,17 +96,41 @@
     font-size: 4rem;
 }
 
-.container.mt-3{
-    background-color: aqua;
-}
 
+    
 .container.mt-4{
     font-family: 'Times New Roman', Times, serif;
+    
+
 }
+
+
+
 /* index css */
+
 .dropdown-menu{
     background-color: whitesmoke
 }
+
+
+.container-fluid {
+    background-image: url(images/index3.jpg);
+    background-size: cover;
+    background-color:rgba(252, 246, 246, 0.696) ;
+    
+    
+}
+
+.container-fluid .heading{
+    background-color:rgba(252, 246, 246, 0.696) ;
+    font-weight: bold;
+}
+
+.container-fluid p{
+    background-color:rgba(252, 246, 246, 0.696) ;
+} 
+
+
 
 /*about images css*/
 
@@ -95,12 +154,18 @@
     padding: 100px 35px 100px;
 }
 
+.artist-img1{
+    max-width: 100%;
+}
+
+/*products*/
 .items {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding:0 100px 35px 100px;
+    
 }
 
 .items li {
@@ -116,11 +181,174 @@
     padding: 40px 15px;
     margin: 20px;
     overflow: hidden;
-    box-shadow: rgba(54, 11, 11, 0.1) 0px 1px 3px 0px,
-        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    box-shadow: rgba(54, 11, 11, 0.1) 0px 1px 3px 0px;
+    
+    
 }
 
-.shoeimage {
-    max-width: 100%;
+.image {
+    max-width: 160px;
     max-height: 200px;
+}
+
+.product-field .star{
+    font-size: 12px;
+    color: rgba(240,117,18);
+}
+
+.name {
+    position: relative;
+    text-align: start
+    
+
+}
+
+.name #addcart{
+    position: absolute;
+    bottom: 12px;
+    right: 1px;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+/* cart page*/
+#s-cart{
+    overflow-x: auto;
+}
+
+#s-cart table{
+    background-color: rgba(252, 246, 246, 0.696);
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#s-cart table img{
+    width: 60px;
+}
+
+#s-cart table td:nth-child(1){
+    width: 150px;
+    text-align: center;
+
+}
+
+#s-cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+    
+}
+
+#s-cart table td:nth-child(3){
+    width: 200px;
+    text-align: center;
+    
+}
+
+#s-cart table td:nth-child(4),
+#s-cart table td:nth-child(5),
+#s-cart table td:nth-child(6){
+    width: 200px;
+    text-align: center;
+    
+}
+
+#s-cart table td:nth-child(6){
+    width: 150px;
+}
+
+#s-cart table td:nth-child(5) input{
+    width: 50px;
+    padding: 1px 10px 1px 15px ;
+
+}
+
+#s-cart table thead{
+    border: 2px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+
+}
+
+#s-cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#s-cart table tbody tr td{
+    padding-top: 15px;
+
+}
+
+#s-cart table tbody td{
+    font-size: 18px;
+}
+
+#cart-add{
+    background-color: rgba(252, 246, 246, 0.696);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 18px 25px 5px 25px;
+}
+
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+
+}
+
+#coupon h3,
+#subtotal h3{
+    padding-bottom: 15px;
+
+}
+#coupon input{
+    padding: 10px 10px;
+    outline: none;
+    width: 40%;
+    margin-right: 10px ;
+    border: 2px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button{
+    background-color: #088178;
+    color: #fff;
+    padding: 9px 10px;
+}
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse ;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
 }
