@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
+
+
+    <title>STATIONARY MART</title>
+</head>
+
+<body class="back">
+    <!-- our code starts here -->
+    <nav class="navbar  sticky-top navbar-expand-lg navbar-dark  " style="background-color: #3b5249;">
+        <a class="head navbar-brand" href="#"> <i class="fa fa-pencil" style="color:whitesmoke; size: 100px"></i><u>
+                Shopping Cart </u></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item" href="stationary.html">Stationary </a>
+
+
+                    </div>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+
+
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle other" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contact us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                        <a class="dropdown-item" href="contact.php">Message Us</a>
+                    </div>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="fa-solid fa-cart-shopping" id="cart" href="cart.html"> </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+    <section id="s-cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Products</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/arch file.jpg" alt=""></td>
+                    <td>Arch File</td>
+                    <td>₹180</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹180</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/calculator.jpg" alt=""></td>
+                    <td>Calculator</td>
+                    <td>₹160</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹180</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/diary.jpg" alt=""></td>
+                    <td>Diary</td>
+                    <td>₹100</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹180</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>₹420</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>₹420</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed To Checkout</button>
+
+
+        </div>
+
+
+    </section>
+
+
+    <footer id="foot" class="xt-5 py-1">
+
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>
+            © 2017-2019 STATIONARY MART, Inc. · <a href="#">Privacy</a> ·
+            <a href="#">Terms</a>
+        </p>
+
+    </footer>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
