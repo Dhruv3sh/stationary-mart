@@ -62,7 +62,7 @@
                         Contact us
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="contact.php">Message Us</a>
+                        <a class="dropdown-item" href="contact.html">Message Us</a>
                     </div>
                 </li>
 
